@@ -71,6 +71,7 @@ configure_usergroups() {
 }
 
 configure_sources_list
+configure_zsh
 
 ##################################
 # Custom post-installation steps #
