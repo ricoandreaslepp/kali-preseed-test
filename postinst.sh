@@ -62,7 +62,7 @@ configure_usergroups() {
     # kaboxer - for kaboxer
     # dialout - for serial access
     # wireshark - capture sessions in wireshark
-    kali_groups="adm,kaboxer,dialout,wireshark"
+    kali_groups="kali-trusted"
 
     for user in $(get_user_list); do
 	echo "INFO: adding user '$user' to groups '$kali_groups'"
@@ -71,6 +71,7 @@ configure_usergroups() {
 }
 
 configure_sources_list
+configure_usergroups
 configure_zsh
 
 ##################################
